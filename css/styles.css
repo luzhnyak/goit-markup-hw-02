@@ -1,6 +1,15 @@
+:root {
+  --general-font-color: #434455;
+  --white-color: #ffffff;
+  --dark-color: #2e2f42;
+  --light-color: #f4f4fd;
+  --link-color: #4d5ae5;
+  --link-active-color: #404bbf;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
-  color: #434455;
+  color: var(--general-font-color);
 }
 
 .list {
@@ -20,15 +29,38 @@ body {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #4d5ae5;
+  color: var(--link-color);
 }
 
 .logo-link-theame-dark {
-  color: #2e2f42;
+  color: var(--dark-color);
 }
 
 .logo-link-theame-light {
-  color: #f4f4fd;
+  color: var(--light-color);
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--dark-color);
+}
+
+.section-item-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--dark-color);
+}
+
+.section-item-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 /* ======================= Components section ========================== */
@@ -40,29 +72,34 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: var(--dark-color);
 }
 
-.menu-link:active {
-  color: #404bbf;
+.menu-link:hover,
+.menu-link:focus {
+  color: var(--link-active-color);
 }
 
 .contacts-link {
   font-style: normal;
-  font-weight: 400;
+
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
+  color: var(--general-font-color);
 }
 
-.contacts-link:active {
-  color: #404bbf;
+.contacts-link:hover,
+.contacts-link:focus {
+  color: var(--link-active-color);
 }
 
 /* ======================= /Header section ========================== */
 
 /* ======================= Hero section ========================== */
+.hero-section {
+  background-color: var(--dark-color);
+}
 
 .hero-title {
   font-weight: 700;
@@ -70,8 +107,7 @@ body {
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
-
-  /* color: #FFFFFF; */
+  color: var(--white-color);
 }
 
 .hero-btn {
@@ -81,13 +117,14 @@ body {
   letter-spacing: 0.04em;
 
   cursor: pointer;
-  background-color: #4d5ae5;
-  color: #ffffff;
+  padding: 16px 32px;
+  background-color: var(--link-color);
+  color: var(--white-color);
 }
 
 .hero-btn:hover,
 .hero-btn:focus {
-  background-color: #404bbf;
+  background-color: var(--link-active-color);
 }
 
 /* ======================= /Hero section ========================== */
@@ -99,7 +136,50 @@ body {
 /* ======================= /Work section ========================== */
 
 /* ======================= Team section ========================== */
+
+.team-section {
+  background-color: var(--light-color);
+}
+
 /* ======================= /Team section ========================== */
 
+/* ======================= Portfolio section ========================== */
+
+.portfolio-menu-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #4d5ae5;
+
+  padding: 12px 24px;
+  background: var(--light-color);
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.portfolio-menu-button:hover,
+.portfolio-menu-button:focus {
+  background: #404bbf;
+  color: var(--white-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+/* ======================= /Portfolio section ========================== */
+
 /* ======================= Footer section ========================== */
+
+.footer-section {
+  background-color: var(--dark-color);
+}
+
+.footer-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--light-color);
+}
+
 /* ======================= /Footer section ========================== */
