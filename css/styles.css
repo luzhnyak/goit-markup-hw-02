@@ -152,6 +152,10 @@ body {
 /* ======================= Team section ========================== */
 
 .team-section {
+  background-color: var(--light-color);
+}
+
+.team-list-item {
   background-color: var(--white-color);
 }
 
@@ -160,6 +164,7 @@ body {
 /* ======================= Portfolio section ========================== */
 
 .portfolio-menu-button {
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
