@@ -10,6 +10,7 @@
 body {
   font-family: 'Roboto', sans-serif;
   color: var(--general-font-color);
+  background-color: var(--white-color);
 }
 
 .list {
@@ -45,6 +46,7 @@ body {
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
+  text-align: center;
   text-transform: capitalize;
   color: var(--dark-color);
 }
@@ -80,6 +82,10 @@ body {
   color: var(--link-active-color);
 }
 
+.contacts {
+  font-style: normal;
+}
+
 .contacts-link {
   font-style: normal;
 
@@ -111,6 +117,7 @@ body {
 }
 
 .hero-btn {
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -130,9 +137,16 @@ body {
 /* ======================= /Hero section ========================== */
 
 /* ======================= About section ========================== */
+.about-section {
+  background-color: var(--white-color);
+}
 /* ======================= /About section ========================== */
 
 /* ======================= Work section ========================== */
+.work-section {
+  background-color: var(--white-color);
+}
+
 /* ======================= /Work section ========================== */
 
 /* ======================= Team section ========================== */
